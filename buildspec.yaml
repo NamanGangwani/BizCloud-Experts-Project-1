@@ -9,8 +9,9 @@ env:
 phases:
     install:
         commands:
-        # Download and Install NodeJS 8.0     
+        # Download and Install NodeJS 8.0 and npm
         - sudo apt-get update -y
+        - sudo apt-get install nodejs npm
         # Verify Node npm installation 
         - npm --version
         - nodejs --version
